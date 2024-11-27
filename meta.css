@@ -1,0 +1,319 @@
+/* Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background: #0056b3;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    height: 90px; /* Tamanho da logo */
+}
+
+/* Navegação */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .nav ul {
+        display: none; /* Esconde os links em telas menores */
+    }
+
+    .btn {
+        display: none; /* Esconde o botão de login */
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0056b3, #1e90ff);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: #ffcc00;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cursos */
+.cursos {
+    padding: 4rem 0;
+    background: #f4f4f4;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+/* Seção de Contato */
+.contato {
+    padding: 4rem 2rem;
+    background: #0056b3; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    text-align: center;
+}
+
+.contato .section-title {
+    font-size: 2rem;
+    color: #ffcc00; /* Título em amarelo */
+    margin-bottom: 1rem;
+}
+
+.contato-description {
+    font-size: 1.1rem;
+    color: #fff; /* Texto branco */
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00; /* Destaque no campo ao focar */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none; /* Impede redimensionamento */
+    height: 150px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #ffcc00; /* Botão amarelo */
+    color: #0056b3; /* Texto azul */
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e6b800; /* Amarelo mais escuro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato-form {
+        padding: 0 1rem; /* Reduzir margens laterais */
+    }
+}
+
+/* Estilo da seção Sobre Nós */
+.sobre {
+    padding: 4rem 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.sobre .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #0056b3;
+    text-align: center; /* Apenas o título centralizado */
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: justify; /* Texto justificado */
+}
+
+.sobre strong {
+    color: #0056b3; /* Destaque em palavras importantes */
+}
+
+/* Seção Escolha */
+.escolha {
+    background: #0056b3; /* Fundo azul */
+    color: white; /* Texto branco */
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.escolha .section-title {
+    font-size: 2rem;
+    color: #ffcc00; /* Título em amarelo */
+    margin-bottom: 2rem;
+}
+
+.escolha-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.escolha-item {
+    background: #1e90ff; /* Fundo azul claro */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.escolha-item p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.escolha-item i {
+    color: #ffcc00; /* Ícone em amarelo */
+    margin-right: 10px;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-primary {
+    background: #ffcc00; /* Botão amarelo */
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #0056b3; /* Texto azul */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #e6b800; /* Amarelo mais escuro ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(255, 204, 0, 0.7);
+}
+
+/* Rodapé - Redes Sociais */
+.footer i {
+    transition: transform 0.2s ease;
+}
+
+.footer i:hover {
+    transform: scale(1.2); /* Aumenta os ícones ao passar o mouse */
+}
+
+.footer span {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px; /* Espaçamento entre ícones e texto */
+    vertical-align: middle;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Destaque em amarelo ao passar o mouse */
+}
+
+
