@@ -125,6 +125,7 @@ body {
 }
 
 /* Seção de Contato */
+/* Seção de Contato */
 .contato {
     padding: 4rem 2rem;
     background: #0056b3; /* Fundo azul */
@@ -196,10 +197,18 @@ body {
     background: #e6b800; /* Amarelo mais escuro */
 }
 
+.contato .fab {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .contato-form {
         padding: 0 1rem; /* Reduzir margens laterais */
+    }
+
+    .contato .col-md-6 {
+        margin-bottom: 2rem;
     }
 }
 
